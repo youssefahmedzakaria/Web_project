@@ -33,10 +33,10 @@
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/web_project-main/login.php">Login</a>
+                        <a class="nav-link" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/web_project-main/registration.php#">Register</a>
+                        <a class="nav-link" href="registration.php#">Register</a>
                     </li>
                 </ul>
             </div>
