@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Register</title>
 </head>
 
 <body>
+    <?php include 'header.php';?>
     <div class="container">
         <form action = "registration.php" method = "post">
             <?php 
@@ -76,11 +77,11 @@
             ?>
             <div class="form-group">
                 <!-- full name  -->
-               <input type="text" class = "form-control" name="fullname" placeholder = "Full Name">
+               <input type="text" class = "form-control" name="fullname" placeholder = "Full name">
             </div>
             <div class="form-group">
                 <!-- user name  -->
-               <input type="text"class = "form-control" name="username" placeholder = "userName">
+               <input type="text"class = "form-control" name="username" placeholder = "username">
             </div>
             <div class="form-group">
                 <!-- date of birth  -->
@@ -91,12 +92,11 @@
                <input type= "tel" class = "form-control"name="phone" placeholder = "Phone">
             </div>
             <div class="form-group">
-                <!-- adress  -->
+                <!-- address  -->
                <input type= "text"class = "form-control" name="address" placeholder = "Address">
             </div>
             <div class="form-group">
                 <!-- password  -->
-                <!-- and validate the password -->
                <input type= "password" class = "form-control"name="password" placeholder = "Password">
             </div>
             <div class="form-group">
@@ -111,11 +111,10 @@
                 <!-- email  -->
                 <input type= "email" class = "form-control"name="email" placeholder = "Email">
             </div>
-            <div class="form-btn">
-                <!-- submit button  -->
+            <div class="form-btn" style = "text-align: center;">
                 <button type="submit" class ="btn btn-primary"  name="submit">Submit</button>
             </div>
-            
 
+            <?php include 'footer.php';?>
 </body>
 </html>
