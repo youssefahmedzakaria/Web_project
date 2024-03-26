@@ -49,5 +49,22 @@ function checkPhone($phone) {
     } else {
         return false;
     }
-}    
+} 
+
+function login($username, $password) {
+    global $conn;
+    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+        if (password_verify($password, $row['password'])) {
+            $_SESSION['username'] = $username;
+            header("Location: index.php");
+        } else {
+            echo "<div class='alert alert-danger'> Invalid password </div>";
+        }
+    } else {
+        echo "<div class='alert alert-danger'> Invalid username </div>";
+    }
+}
 ?>

@@ -9,6 +9,16 @@
 </head>
 <body>
     <?php include 'header.php';?>
+    <h1>Home Page</h1>
+    <h2>Welcome to FCAI</h2>
+    <h3>Our Services</h3>
+    <ul>
+        <li>Web Development</li>
+        <li>Mobile Development</li>
+        <li>Desktop Development</li>
+        <li>Cloud Computing</li>
+        <li>Machine Learning</li>
+    </ul>
     
     <?php include 'footer.php';?>
 </body>
