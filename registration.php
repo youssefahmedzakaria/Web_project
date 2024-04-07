@@ -131,7 +131,7 @@
             </div>
         </form>
     </div>
-    <!-- <div class="container">
+    <div class="container">
         <table class="table">
             <thead>
                 <tr>
@@ -142,7 +142,7 @@
 
         </tbody>
         </table>
-    </div> -->
+    </div>
     <?php include 'footer.php';?>
 </body>
 </html>
