@@ -99,7 +99,7 @@
 
             <div class="form-group2">
                 <!-- button to check actors born on the same day -->
-                <button type="submit" class="btn btn-secondary" id="checkActorsBtn">Check Actors Born on the Same Day</button>
+                <button type="submit" class="btn btn-secondary" id="checkActorsBtn">Check Actors Born Today</button>
             </div>
 
             <div class="form-group">
@@ -131,7 +131,7 @@
             </div>
         </form>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <table class="table">
             <thead>
                 <tr>
@@ -142,7 +142,7 @@
 
         </tbody>
         </table>
-    </div>
+    </div> -->
     <?php include 'footer.php';?>
 </body>
 </html>

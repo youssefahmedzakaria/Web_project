@@ -36,25 +36,20 @@ body {
 }
 
 footer {
-    max-width: 600px;
-    width: 100%;
-    padding: 10px;
-    min-height: 5%;
-    margin-top: auto;
-    /* background-color: #333; */
-    color: #14131a;
-    padding: 10px 0;
-    position: absolute; 
+    position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center; 
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    height: 50px;
+    /* background-color: #d3d3d3; */
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%
 }
 
 .footer-links {
@@ -67,7 +62,6 @@ footer {
 }
 
 .footer-links li a {
-    color: #002fff;
     text-decoration: underline ;
 }
 
@@ -78,7 +72,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 99;
-    background-color: gray;
+    background-color: #8a8787;
   }
 
 .card {
