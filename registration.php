@@ -28,16 +28,8 @@
             array_push($errors, "Password do not match");
         }
 
-        if(strlen($password) < 8){
-            array_push($errors, "Password must be at least 6 characters");
-        }
-
-        if (!preg_match("/[0-9]/", $password)) {
-            array_push($errors, "Password must contain at least one number");
-        }
-
-        if (!preg_match("/[^a-zA-Z0-9]/", $password)) {
-            array_push($errors, "Password must contain at least one special character");
+        if(strlen($password) < 8 || !preg_match("/[0-9]/", $password) || !preg_match("/[^a-zA-Z0-9]/", $password)){
+            array_push($errors, "Password must be at least 8 characters long and contain at least one number and one special character");
         }
 
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -75,6 +67,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="API_Ops.js"></script>
+    <script src="Upload.js"></script>
     <title>Register</title>
 </head>
 
@@ -106,30 +99,47 @@
                 <!-- phone  -->
                 <input type="tel" class="form-control" name="phone" placeholder="Phone">
             </div>
+
+            
             <div class="form-group">
                 <!-- address  -->
                 <input type="text" class="form-control" name="address" placeholder="Address">
             </div>
+
+
             <div class="form-group">
                 <!-- password  -->
                 <input type="password" class="form-control" name="password" placeholder="Password">
             </div>
+
+
             <div class="form-group">
                 <!-- confirm password  -->
                 <input type="password" class="form-control" name="cpassword" placeholder="Confirm Password">
             </div>
+
+
             <div class="form-group">
-                <!-- user Image  -->
                 <input type="file" class="form-control" name="image" placeholder="Image">
             </div>
+            
+
+
             <div class="form-group">
                 <!-- email  -->
                 <input type="email" class="form-control" name="email" placeholder="Email">
             </div>
+
+
             <div class="form-btn" style="text-align: center;">
-                <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                <button type="submit" class="btn btn-primary" name="submit" onclick = "uploadImage()" >Submit</button>
             </div>
+
+
+            
         </form>
+
+
     </div>
     <div class="container">
         <table class="table">
@@ -146,3 +156,5 @@
     <?php include 'footer.php';?>
 </body>
 </html>
+
+    

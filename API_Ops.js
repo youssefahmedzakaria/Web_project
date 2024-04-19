@@ -2,7 +2,6 @@ $(document).ready(function(){
     $('#checkActorsBtn').click(function(event){
         event.preventDefault();
         
-        //day and month from date picker
         var day = $('#day').val();
         var month = $('#month').val();
         
